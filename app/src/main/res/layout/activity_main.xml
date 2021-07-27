@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/tab_background">
+
+        <TextView
+            android:id="@+id/bookAppointment_selectedDate"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Selected Date"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/bookAppointment_selectDate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Select Date"
+            android:textColor="#ffffff"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/morning_shift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:shadowColor="#000000"
+                    android:text="08:00 - 10:00 AM"
+                    android:id="@+id/t1"
+                    android:layout_marginTop="15dp"
+                    android:textSize="22sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/tab_background"
+                    android:textStyle="bold" />
+
+
+
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="22sp"
+                    android:text="10:00 - 12:00 AM"
+                    android:background="@drawable/tab_background"
+                    android:id="@+id/t2"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="15dp"
+
+                    android:textStyle="bold" />
+
+
+
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="22sp"
+                    android:text="2:00 - 4:00 AM"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/t3"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/tab_background"
+                    android:textStyle="bold" />
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
